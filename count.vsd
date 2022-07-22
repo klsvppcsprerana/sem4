@@ -1,0 +1,5 @@
+Set fso=creatobject("Scripting.FileSystemObject")
+desktopPath=createObject("Wscript.shell").SpecialFolders("Desktop")
+msgbox "The number of files on the desktop is:"&fso.GetFolder(DesktopPath).File.Count
+msgbox "The number of folders on the desktop
+is:"&fso.GetFolder(DesktopPath).SubFolder.Count
